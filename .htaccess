@@ -1,0 +1,3 @@
+<Files *.exe>
+  SetHandler fcgid-script
+</Files>

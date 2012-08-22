@@ -21,7 +21,10 @@ export LD_LIBRARY_PATH="/usr/lib64/mysql:$SYSNAME_LIBS:$LD_LIBRARY_PATH"
 export LD_RUN_PATH="/usr/lib64/mysql:$SYSNAME_LIBS:$LD_RUN_PATH"
 export LDFLAGS="-L/usr/lib64/mysql"
 #echo "LD_LIBRARY_PATH=\"$LD_LIBRARY_PATH\""
-CMD="$URWEB -noEmacs -protocol fastcgi -dbms sqlite -sql diagrams.sql -db \"dbname=$DIR/diagrams.db\" diagrams"
+#CMD="$URWEB -noEmacs -protocol fastcgi -dbms sqlite -sql diagrams.sql -db \"dbname=$DIR/diagrams.db\" diagrams"
+CMD="$URWEB -noEmacs -protocol fastcgi diagrams"
 echo "$CMD"
 eval "$CMD"
-athrun scripts for-each-server pkill diagrams.exe
+echo "athrun scripts for-each-server pkill diagrams.exe"
+#athrun scripts for-each-server pkill diagrams.exe
+/mit/scripts/bin/for-each-server pkill diagrams.exe

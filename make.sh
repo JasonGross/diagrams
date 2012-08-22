@@ -24,3 +24,4 @@ export LDFLAGS="-L/usr/lib64/mysql"
 CMD="$URWEB -noEmacs -protocol fastcgi -dbms sqlite -sql diagrams.sql -db \"dbname=$DIR/diagrams.db\" diagrams"
 echo "$CMD"
 eval "$CMD"
+athrun scripts for-each-server pkill diagrams.exe

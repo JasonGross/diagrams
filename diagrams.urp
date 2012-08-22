@@ -1,3 +1,4 @@
 prefix /diagrams/diagrams.exe
+rewrite all Diagrams/*
 
 diagrams
